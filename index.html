@@ -10,7 +10,7 @@
 
     <!-- Meta Tags para Redes Sociais -->
     <meta property="og:title" content="Espaço Saúde - Transforme sua vida hoje">
-    <meta property="og:description" content="Natação, Pilates e Fisioterapia com excelência. Agende sua aula experimental.">
+    <meta property="og:description" content="Natação, Pilates, Hidroginástica e Musculação com profissionais de elite. Agende sua aula experimental gratuita agora!">
     <meta property="og:image" content="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&q=80&w=1200">
 
     <!-- Fonte Outfit (Moderna e Profissional) -->
@@ -102,6 +102,7 @@
 
             <!-- Links Desktop -->
             <div class="hidden md:flex items-center bg-slate-100 rounded-full px-1 py-1 mx-4">
+                <a href="#services" class="px-4 py-1.5 text-sm font-medium text-brand hover:bg-white hover:shadow-sm rounded-full transition-all">Modalidades</a>
                 <a href="#benefits" class="px-4 py-1.5 text-sm font-medium text-brand hover:bg-white hover:shadow-sm rounded-full transition-all">Diferenciais</a>
                 <a href="#team" class="px-4 py-1.5 text-sm font-medium text-brand hover:bg-white hover:shadow-sm rounded-full transition-all">Equipe</a>
                 <a href="#testimonials" class="px-4 py-1.5 text-sm font-medium text-brand hover:bg-white hover:shadow-sm rounded-full transition-all">Alunos</a>
@@ -140,8 +141,8 @@
                 <button onclick="openModal()" class="bg-brand hover:bg-brand-light text-white px-8 py-4 rounded-full font-bold shadow-xl hover:shadow-2xl transition-all flex items-center justify-center gap-2">
                     Começar Agora <i data-lucide="calendar" class="w-5 h-5"></i>
                 </button>
-                <button onclick="document.getElementById('team').scrollIntoView({behavior: 'smooth'})" class="bg-white/10 backdrop-blur border border-white/20 text-white hover:bg-white/20 px-8 py-4 rounded-full font-bold transition-all flex items-center justify-center gap-2">
-                    Conhecer Equipe
+                <button onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})" class="bg-white/10 backdrop-blur border border-white/20 text-white hover:bg-white/20 px-8 py-4 rounded-full font-bold transition-all flex items-center justify-center gap-2">
+                    Conhecer Modalidades
                 </button>
             </div>
         </div>
@@ -179,8 +180,78 @@
         </div>
     </section>
 
+    <!-- NOVO: SEÇÃO DE SERVIÇOS COM FOTOS -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-brand font-bold tracking-wider text-sm uppercase">O que oferecemos</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mt-2">Nossas Modalidades</h2>
+                <div class="w-20 h-1 bg-brand mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1: Natação -->
+                <div class="group rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-100 bg-white cursor-pointer" onclick="openModal()">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&q=80&w=800" alt="Natação Infantil e Adulto" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 to-transparent flex items-end p-6">
+                            <div class="text-white">
+                                <h3 class="text-2xl font-bold mb-1">Natação</h3>
+                                <p class="text-sky-200 text-sm font-medium">Infantil e Adulto</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-slate-600 text-sm mb-4">Aulas personalizadas para todas as idades, focadas no aprendizado, segurança e condicionamento aquático.</p>
+                        <div class="flex items-center text-brand font-bold text-sm uppercase tracking-wide group-hover:gap-2 transition-all">
+                            Saiba mais <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Hidro -->
+                <div class="group rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-100 bg-white cursor-pointer" onclick="openModal()">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1571731956672-f2b94d7dd0cb?auto=format&fit=crop&q=80&w=800" alt="Hidroginástica e Hidroterapia" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 to-transparent flex items-end p-6">
+                            <div class="text-white">
+                                <h3 class="text-2xl font-bold mb-1">Hidroginástica</h3>
+                                <p class="text-sky-200 text-sm font-medium">e Hidroterapia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-slate-600 text-sm mb-4">Exercícios de baixo impacto ideais para reabilitação, terceira idade e fortalecimento muscular seguro.</p>
+                        <div class="flex items-center text-brand font-bold text-sm uppercase tracking-wide group-hover:gap-2 transition-all">
+                            Saiba mais <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Pilates/Musculação -->
+                <div class="group rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-100 bg-white cursor-pointer" onclick="openModal()">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=800" alt="Pilates e Musculação" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 to-transparent flex items-end p-6">
+                            <div class="text-white">
+                                <h3 class="text-2xl font-bold mb-1">Pilates</h3>
+                                <p class="text-sky-200 text-sm font-medium">e Musculação</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-slate-600 text-sm mb-4">Estúdio completo de Pilates e área de musculação com acompanhamento profissional para seus objetivos.</p>
+                        <div class="flex items-center text-brand font-bold text-sm uppercase tracking-wide group-hover:gap-2 transition-all">
+                            Saiba mais <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- 4. CARROSSEL DE PROFISSIONAIS (Nova Seção) -->
-    <section id="team" class="py-20 bg-white">
+    <section id="team" class="py-20 bg-slate-50">
         <div class="container mx-auto px-6">
             <div class="flex justify-between items-end mb-12">
                 <div>
@@ -188,15 +259,15 @@
                     <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mt-2">Especialistas em Você</h2>
                 </div>
                 <div class="flex gap-2">
-                    <button onclick="scrollTeam('left')" class="p-2 rounded-full border hover:bg-slate-50 text-brand"><i data-lucide="chevron-left" class="w-6 h-6"></i></button>
-                    <button onclick="scrollTeam('right')" class="p-2 rounded-full border hover:bg-slate-50 text-brand"><i data-lucide="chevron-right" class="w-6 h-6"></i></button>
+                    <button onclick="scrollTeam('left')" class="p-2 rounded-full border hover:bg-white text-brand"><i data-lucide="chevron-left" class="w-6 h-6"></i></button>
+                    <button onclick="scrollTeam('right')" class="p-2 rounded-full border hover:bg-white text-brand"><i data-lucide="chevron-right" class="w-6 h-6"></i></button>
                 </div>
             </div>
 
             <!-- Scroll Container -->
             <div id="team-scroll" class="flex overflow-x-auto gap-6 pb-8 scrollbar-hide scroll-smooth snap-x">
                 <!-- Profissional 1 -->
-                <div class="min-w-[280px] md:min-w-[320px] bg-slate-50 rounded-3xl p-4 snap-center group hover:shadow-xl transition-all border border-slate-100">
+                <div class="min-w-[280px] md:min-w-[320px] bg-white rounded-3xl p-4 snap-center group hover:shadow-xl transition-all border border-slate-100">
                     <div class="h-80 rounded-2xl overflow-hidden mb-4 relative">
                         <!-- object-cover adicionado -->
                         <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Dr. Patrocínio">
@@ -207,7 +278,7 @@
                 </div>
 
                 <!-- Profissional 2 -->
-                <div class="min-w-[280px] md:min-w-[320px] bg-slate-50 rounded-3xl p-4 snap-center group hover:shadow-xl transition-all border border-slate-100">
+                <div class="min-w-[280px] md:min-w-[320px] bg-white rounded-3xl p-4 snap-center group hover:shadow-xl transition-all border border-slate-100">
                     <div class="h-80 rounded-2xl overflow-hidden mb-4 relative">
                         <!-- object-cover adicionado -->
                         <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Ana Clara">
@@ -217,7 +288,7 @@
                 </div>
 
                 <!-- Profissional 3 -->
-                <div class="min-w-[280px] md:min-w-[320px] bg-slate-50 rounded-3xl p-4 snap-center group hover:shadow-xl transition-all border border-slate-100">
+                <div class="min-w-[280px] md:min-w-[320px] bg-white rounded-3xl p-4 snap-center group hover:shadow-xl transition-all border border-slate-100">
                     <div class="h-80 rounded-2xl overflow-hidden mb-4 relative">
                         <!-- object-cover adicionado -->
                         <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Carlos">
@@ -227,7 +298,7 @@
                 </div>
 
                 <!-- Profissional 4 -->
-                <div class="min-w-[280px] md:min-w-[320px] bg-slate-50 rounded-3xl p-4 snap-center group hover:shadow-xl transition-all border border-slate-100">
+                <div class="min-w-[280px] md:min-w-[320px] bg-white rounded-3xl p-4 snap-center group hover:shadow-xl transition-all border border-slate-100">
                     <div class="h-80 rounded-2xl overflow-hidden mb-4 relative">
                         <!-- object-cover adicionado -->
                         <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Júlia">
